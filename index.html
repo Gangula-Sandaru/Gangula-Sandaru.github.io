@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gangula - High Tech Brand</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Font for extra style -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
+    <style>
+        /* Custom styling for body and background */
+        body {
+            background-color: #1a3d29; /* Dark green background */
+            font-family: 'Roboto', sans-serif;
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        /* Larger, glowing "Gangula" text with animation */
+        .brand-name {
+            font-size: 7rem;
+            font-weight: 900;
+            color: #00ff00; /* Bright green text color */
+            text-shadow: 0 0 20px rgba(0, 255, 0, 0.7), 0 0 30px rgba(0, 255, 0, 0.7);
+            animation: pulse 3s infinite, fadeIn 2s ease-in-out;
+        }
+
+        /* Animation for glowing pulse and fading in */
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+                text-shadow: 0 0 20px rgba(0, 255, 0, 0.7), 0 0 30px rgba(0, 255, 0, 0.7);
+            }
+            50% {
+                transform: scale(1.1);
+                text-shadow: 0 0 40px rgba(0, 255, 0, 1), 0 0 60px rgba(0, 255, 0, 1);
+            }
+            100% {
+                transform: scale(1);
+                text-shadow: 0 0 20px rgba(0, 255, 0, 0.7), 0 0 30px rgba(0, 255, 0, 0.7);
+            }
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Brand description with animation */
+        .brand-description {
+            font-size: 1.4rem;
+            color: #aaffaa; /* Lighter green for the text */
+            margin-top: 20px;
+            opacity: 0;
+            animation: fadeInDescription 2s 1s forwards, changeText 8s infinite;
+            font-weight: 600;
+            font-style: italic;
+        }
+
+        /* Animation for description fading in */
+        @keyframes fadeInDescription {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        /* Animation for looping text change */
+        @keyframes changeText {
+            0% {
+                content: "Where Innovation Meets Intelligence";
+            }
+            33% {
+                content: "Shaping the Future with Technology";
+            }
+            66% {
+                content: "Empowering the World, One Idea at a Time";
+            }
+            100% {
+                content: "Where Innovation Meets Intelligence";
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Brand Name with enhanced animation -->
+        <div class="brand-name">
+            Gangula
+        </div>
+
+        <!-- Brand Description with looping animation -->
+        <!-- <div class="brand-description">
+            Where Innovation Meets Intelligence
+        </div> -->
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
